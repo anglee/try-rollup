@@ -2,12 +2,14 @@ import { PlusOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import React from 'react';
 
-interface IProps {}
+export interface IProps {
+  text: string;
+}
 
-const AntButton = ({}: IProps) => {
+const AntButton = ({ text }: IProps) => {
   return (
     <Button type="primary" icon={<PlusOutlined />}>
-      Ant1234
+      {text}
     </Button>
   );
 };

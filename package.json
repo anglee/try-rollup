@@ -14,15 +14,27 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "rollup": "rollup -c",
-    "prettier": "prettier --write './**/*.{ts,tsx,js,css,less,scss,json}'"
+    "prettier": "prettier --write './**/*.{ts,tsx,js,css,less,scss,json}'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Ang Lee",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.18.13",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.4.0",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.17",
+    "babel-loader": "^8.2.5",
     "prettier": "^2.7.1",
     "rollup": "^2.78.1",
     "rollup-plugin-dts": "^4.2.2",
@@ -34,5 +46,6 @@
     "@ant-design/icons": "^4.7.0",
     "antd": "^4.22.8",
     "react": "^18.2.0"
-  }
+  },
+  "dependencies": {}
 }
