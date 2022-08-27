@@ -7,7 +7,7 @@ interface IProps {}
 const AntButton = ({}: IProps) => {
   return (
     <Button type="primary" icon={<PlusOutlined />}>
-      Ant
+      Ant1234
     </Button>
   );
 };
