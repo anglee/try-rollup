@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 export interface ButtonProps {
   label: string;
 }
 
 const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
+  return <button>{props.label} 5678</button>;
 };
 
 export default Button;
